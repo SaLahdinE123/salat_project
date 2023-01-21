@@ -13,7 +13,7 @@ if (mm < 10) mm = '0' + mm;
 
 const formattedToday = dd + '-' + mm + '-' + yyyy;
 function getTiming(city){
-    fetch(`https://api.aladhan.com/v1/calendarByCity?city=${city}&country=morocco&method=9&month=1&year=2023`)
+    fetch(`https://api.aladhan.com/v1/calendarByCity?city=${city}&country=morocco&method=9&month=${mm}&year=2023`)
     .then(response => response.json())
     .then(timing => {
         for (const time of timing.data) {
@@ -50,17 +50,6 @@ function getTiming(city){
                     </div>
                 
                 `
-                // alfajr.innerHTML = time.timings.Fajr.substring(0 , 5)
-                // aldohr.innerHTML = time.timings.Dhuhr.substring(0 , 5)
-                // alasr.innerHTML = time.timings.Asr.substring(0 , 5)
-                // almarghrib.innerHTML = time.timings.Maghrib.substring(0 , 5)
-                // alicha.innerHTML = time.timings.Isha.substring(0 , 5)
-                // console.log(almarghrib.innerHTML);
-                // console.log(timeadan);
-                // if ("18:26" == almarghrib.innerHTML) {
-                //     playAdhan()
-                //     console.log("test");
-                // }
             }
         }
     })
