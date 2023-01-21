@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("images/Casablanca-Mosque.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    direction: rtl;
+    margin: auto;
+    gap: 90px;
+    margin-top: 100px;
+}
+.citys-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.citys-container select {
+    background-color: #18244e;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 10px;
+    width: 151px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.citys-container select option:scope{
+    background: #eee;
+    color: black;
+}
+#date{
+    margin-right: 40px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.container .city{
+    font-size: 11vw;
+}
+.salawat{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.salawat .card-salats{
+    width: 140px;
+    height: 100px;
+    background-color: #18244e;
+    padding: 11px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 42px #7b7b7b;
+}
+.salawat .card-salats h3{
+    font-size: 30px;
+}
+/* .container .citys{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 10px 20px 48px #403f3b;
+}
+select{
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: white;
+    width: 177px;
+    height: 32px;
+}
+.tbl-adhan{
+    direction: rtl;
+    background-color: black;
+    padding: 15px 50px ;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 20px 48px #403f3b;
+}
+.tbl-adhan tr{
+    margin-top: 10px;
+    height: 45px;
+    border-bottom: aqua;
+    font-size: 20px;
+} */
